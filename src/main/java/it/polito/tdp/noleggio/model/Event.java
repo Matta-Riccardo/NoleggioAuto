@@ -4,10 +4,15 @@ import java.time.LocalTime;
 
 public class Event implements Comparable<Event>{
 	
-	public enum EventType {
+	public enum EventType { //Essendo che il tipo di evento apparterrà a un valore tra un insieme finito di valori, posso definire una enumerazione
+
+		//		Enumerazioni = classi degeneri che definiscono solo una serie di costanti
+		
 		NUOVO_CLIENTE,
 		AUTO_RESTITUITA
 	}
+	
+//	Un evento contiene sempre due o più campi: il primo è sempre rappresentato dal tempo , il secondo è il tipo di evento e in aggiunta tutte le informazioni aggiuntive
 	
 	private LocalTime time ;
 	private EventType type ;
